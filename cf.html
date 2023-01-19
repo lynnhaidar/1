@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title> ComplexFormsHW </title>
+    </head>
+
+    <body>
+        <form>
+            <div>
+                <table>
+                    <tr>
+                        <td> 
+                            <b> Title: </b> <br>
+                            <input type="text" size="50" id="Title" name="Title" placeholder="Astronomy for Poets" required>
+                        </td>
+                            
+                        <td>
+                            <b> Short Title: </b> <br>
+                            <input type="text" id="Shorttitle" name="Shorttitle" placeholder="Astr. for Poets" required>
+                        </td>
+
+                        <td>
+                            <b> Subj.:</b> <br>
+                            BLST
+                        </td>
+                        <td>
+                            <b> Num.:</b> <br>
+                            <input type="text" size="1" id="Num" name="Num" placeholder="10">
+                        </td>
+                        <td>
+                            <b> Section:</b> <br>
+                            <input type="text" size="1" id="Section" name="Section" placeholder="01">
+                        </td>
+                        <td>
+                            <b> Year:</b> <br>
+                            0910
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <br> <br>
+
+            <div>
+                <table border="1">
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="elimit" name="elimit"> </td>
+                                        <td>
+                                            <label for="elimit"> Enrollment Limit</label>
+                                         </td> 
+                                    <td>
+                                        <label for="num"> <b> Num.:</b></label> <br>
+                                        <input type="text" size="1" id="num" name="num"> 
+                                    </td>
+                                    <td>
+                                        <label for="rationale"> <b> Rationale: </b> </label> <br>
+                                        <input type="text" size="70" id="rationale" name="rationale">
+                                    </td>
+                                </tr>
+                                
+                            </table>
+
+                        </td>
+                        <td rowspan=4> 
+                            <label for="class meetingsweek"> <b> Class Meetings/Week: </b></label> <br>
+                            <select name="class meetingsweek" id="class meetingsweek">
+                                <option value="1" selected> 1 </option>
+                                <option value="2"> 2 </option>
+                            </select> <br> <br>
+                            <label for="class hoursweek"> <b> Class Hours/Week: </b></label> <br>
+                            <select name="class hoursweek" id="class hoursweek">
+                                <option value="1" selected> 1 </option>
+                                <option value="2"> 2 </option>
+                            </select> <br> <br>
+                            <label for="semesters"> <b> Semester(s) Offered: </b></label> <br>
+                            <select name="semesters" id="semesters">
+                                <option value="-None-" selected> - None - </option>
+                                <option value="-Fall-"> - Fall - </option>
+                                <option value="spring"> - Spring - </option>
+                            </select> <br> <br> <br>
+                            <input type="checkbox" id="inel" name="inel" checked>
+                            <label for="inel"> Inel, semester in prereqs</label> <br> <br>
+                            <input type="checkbox" id="offered" name="offered">
+                            <label for="offered"> Offered only once </label> <br> <br>
+                            <input type="checkbox" id="printed" name="printed">
+                            <label for="printed"> Inel, in printed catalog</label> <br> <br> <br> <br> <br> <br> <br>
+
+                        </td>
+                        <td rowspan="4">
+                            <b> Keywords:</b> <br> <br> 
+                            <input type="checkbox" id="science" name="science">
+                            <label for="science"> Science for non-majors</label> <br> <br>
+                            <input type="checkbox" id="arts" name="arts">
+                            <label for="arts"> Fine arts for non-majors </label> <br> <br>
+                            <input type="checkbox" id="lab" name="lab">
+                            <label for="lab"> Lab science course </label> <br> <br>
+                            <input type="checkbox" id="practice" name="practice">
+                            <label for="practice"> Artistic practice</label> <br> <br>
+                            <input type="checkbox" id="lang" name="lang">
+                            <label for="lang"> Foreign language/culture taught in english</label> <br> <br>
+                            <input type="checkbox" id="community" name="community">
+                            <label for="community"> Community based learning</label> <br> <br>
+                            <input type="checkbox" id="attentive" name="attentive">
+                            <label for="attentive"> Writing attentive </label> <br> <br>
+                            <input type="checkbox" id="intensive" name="intensive">
+                            <label for="intensive"> Writing intensive</label> <br> <br> <br><br> <br> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="consent" name="consent">
+                                    </td>
+                                    <td>
+                                        <label for="consent"> Consent</label>
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        <label for="rationale"> <b> Rationale:</b></label> <br>
+                                        <input type="text" size="70" id="rationale" name="rationale">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="limit" name="limit"> 
+                                        
+                                            <label for="limit"> Limit Class Level</label>
+                                        </td>
+                                    <td>
+                                        <label for="code"> <b> Code:</b></label> <br>
+                                        <input type="text" size="1" id="code" name="code"> 
+                                    </td>
+                                    <td>
+                                        <label for="rationale"> <b> Rationale:</b></label> <br>
+                                        <input type="text" size="70" id="rationale" name="rationale">
+                                    </td>
+                                    <tr>
+                                        <td>
+
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                        <td> 
+                                            <label for="how"> <b> How to handle over-enrollment:</b></label> <br>
+                                            <input type="text" size="70" id="how" name="how">
+                                        </td>
+
+                                    </tr>
+                                    
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="third" name="third"> <label for="third"> Prerequisite</label> </td>
+                                    
+                                    <td>
+
+                                    </td> 
+                                    <td>
+                                        <label for="rationale"> <b> Rationale: </b> </label> <br>
+                                        <input type="text" size="70" id="rationale" name="rationale">
+                                    </td>
+                                    <tr>
+                                        <td>
+    
+                                        </td>
+                                        <td>
+    
+                                        </td>
+                                        <td> 
+                                            <label for="required"> <b> Required Prereqs. (major,course): </b> </label> <br>
+                                            <input type="text" size="70" id="required" name="required">
+                                        </td>
+    
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                        <td>
+                                            <label for="recommended"> <b> Recommended Prereqs: </b> </label> <br>
+                                            <input type="text" size="70" id="recommended" name="recommended">
+                                        </td>
+                                    </tr>
+                                    </tr>
+                                </table>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th> Approvals: </th>
+                        <th> Date: </th>
+                        <th> Comment:</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="cep" name="cep"> 
+                            <label for="cep"> CEP </label>
+                        </td>
+                        <td style="background-color:rgb(184, 182, 182)"> <label for="d1"> + </label>
+                        <input type=text id="d1" name="d1"> </td>
+                        <td style="background-color:rgb(184, 182, 182)"> 
+                            <label for="c1"> + </label>
+                            <input type="text" id="c1" name="c1" size="90"> 
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="cos" name="cos"> 
+                            <label for="cos"> Committee of Six </label>
+                        </td>
+                        <td style="background-color:rgb(184, 182, 182)"> <label for="d2"> + </label>
+                        <input type=text id="d2" name="d2"> </td>
+                        <td style="background-color:rgb(184, 182, 182)"> 
+                            <label for="c2"> + </label>
+                            <input type="text" id="c2" name="c2" size="90"> 
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="f" name="f"> 
+                            <label for="f"> Faculty </label>
+                        </td>
+                        <td style="background-color:rgb(184, 182, 182)"> <label for="d3"> + </label>
+                        <input type=text id="d3" name="d3"> </td> <br>
+                        <td style="background-color:rgb(184, 182, 182)"> 
+                            <label for="c3"> + </label>
+                            <input type="text" id="c3" name="c3" size="90"> 
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </form>
+    </body>
+</html>
