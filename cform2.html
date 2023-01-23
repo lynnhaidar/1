@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title> ComplexForms2hw </title>
+        <script src="https://kit.fontawesome.com/c0c266f5b6.js" crossorigin="anonymous"> </script>
+
+    </head>
+
+    <body style="border-right-color:solid grey;border-buttom-color:solid grey;border-top-color:white;border-left-color:white; border-width:4px; border-style:solid;" >
+
+        <form>
+
+        <div>
+            
+                <table width="1215" style="background-color:rgb(231, 227, 227);padding-left:10px;margin:10px">
+                    <tr>
+                        <td>
+                            <label for="record" style="color:rgb(68, 68, 181)"> Record: </label>
+                            <select name="record" id="record">
+                                <option value="Record" selected> </option>
+                            </select>
+                        </td>
+                        <td>
+                            <table align="right">
+                                <tr>
+                                    <td>
+                                        <label for="view" > View: </label>
+                                        <select name="view" id="view">
+                                            <option value="revieworder" selected> <b> Review Order</b></option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            
+        </div>
+        <div class="required-field" style="margin-right: 10px;margin-left: 5px;margin-bottom: 10px;">
+            &emsp;
+            <i class="fa-solid fa-arrow-down" style="color: blue;"></i>
+            <i class="fa-solid fa-arrow-down" style="color: blue;"></i>
+            <label style="color:grey"> * -indicates a required field </label>
+            <div align="right" >
+                <input type="submit" value="OK" style="padding-left:30px;text-align:center;margin-inline-end:15px">
+                 <input type="reset" value="Delete" style="padding-left:30px;text-align:center;margin-inline-end: 15px">
+                <input type="button" value="Cancel" style="padding-left:30px;text-align:center;margin-inline-end: 18px">
+            </div>
+        </div>
+
+        <br> 
+        <hr style="border-top: solid gray 1px;width:98%">
+            
+
+        <div>
+            
+            <label for="cust" style="margin-inline-start: 15px"> <b> Customer:</b> </label>
+            <input type="text" name="cust" id="cust" value="Bon app'">
+            <table align="right">
+                <tr>
+                    <td>
+                        <label for="address" style="margin-right:36px"> <b> Address:</b> </label >
+                        <input type="text" name="address" id="address" style="margin-inline-end: 25px;text-align:right" placeholder="12,rue des Bouchers">
+
+                    </td>
+                </tr>
+            </table>
+            <br> <br>
+            <label for="emp" style="margin-inline-start: 15px"> <b> Employee:</b> </label>
+            <input type="text" name="emp" id="emp" value="Peacock">
+            <table align="right" >
+                <tr>
+                    <td>
+                        <label for="city" style="margin-right:63px"> <b> City:</b> </label >
+                        <input type="text" name="city" id="city" style="margin-inline-end: 25px;text-align:right" placeholder="Marseille">
+                    </td>
+                </tr>
+            </table>
+            <br> <br>
+            <label for="order" style="margin-inline-start: 15px"> <b> Order Date:</b> </label>
+            <input type="date" name="order" id="order" value="1998-05-06">
+            <table align="right" >
+                <tr>
+                    <td>
+                        <label for="reg" style="margin-right:45px"> <b> Region:</b> </label >
+                        <input type="text" name="reg" id="reg" style="margin-inline-end: 25px">
+                    </td>
+                </tr>
+            </table>
+            <br> <br>
+            <label for="req" style="margin-inline-start: 15px"> <b> Required Date:</b> </label>
+            <input type="date" name="req" id="req" value="1998-06-03">
+            <table align="right" >
+                <tr>
+                    <td>
+                        <label for="pcode" style="margin-right:15px"> <b> Postal Code:</b> </label >
+                        <input type="text" name="pcode" id="pcode" style="margin-inline-end: 25px;text-align:right" placeholder="13008">
+                    </td>
+                </tr>
+            </table>
+            <br> <br>
+            <label for="shipped" style="margin-inline-start: 15px"> <b> Shipped Date:</b> </label>
+            <input type="date" name="shipped" id="shipped" value=" ">
+            <table align="right" >
+                <tr>
+                    <td>
+                        <label for="shipc" style="margin-right:3px"> <b> Ship Country:</b> </label >
+                        <input type="text" name="shipc" id="shipc" style="margin-inline-end: 25px;text-align:right" placeholder="France">
+                    </td>
+                </tr>
+            </table>
+            <br> <br>     
+        </div>
+        <table width="1180" style="background-color:rgb(231, 227, 227);margin:20px">
+            <tr>
+                <td>
+                    <select name="s" id="s">
+                        <option value="s1"> </option>
+                        <option value="s2"> </option>
+                    </select>
+                </td>
+                <td> 
+                    <input type="search" id="s" name="g" placeholder="cha" >  </td>
+                    <td> <button type="submit" style="margin-right:400px;"><i class="fa fa-search"></i></button></td>
+
+                <td>
+                    <input type="image" id="img" name="img" value="New Order Details" style="color:rgb(68, 68, 181);margin-inline-end:100px">
+                    <span style="padding-right:150px">
+                        <label for="act" style="color:rgb(68, 68, 181)"> Actions</label>
+                    <select name="act" id="act">
+                        <option value="act" selected > </option>
+                    </select>
+
+                    </span>
+
+                </td>
+
+            </tr>
+        </table>
+        <div>
+            <table width="1200" style="border:solid black; border-width:1px;margin:15px">
+                
+                
+                
+                <tr>
+                    <td style="color:rgb(68, 68, 181)"> Product Name  </td>
+                    <td style="color:rgb(68, 68, 181)"> Unit Price  </td>
+                    <td style="color:rgb(68, 68, 181)"> Quantity  </td>
+                    <td style="color:rgb(68, 68, 181)"> Discount  </td>
+                    <td style="color:rgb(68, 68, 181)"> Product <br> Category <br> Name  </td>
+                    <td style="color:rgb(68, 68, 181)"> Product Supplier <br> Company Name  </td>
+                    <td style="color:rgb(68, 68, 181)"> Extended Price  </td>
+                </tr>
+            <tr>
+                <td> <br></td>
+            </tr>
+            
+            <tr>
+                <td style="color:rgb(68, 68, 181)"> Grandma's <br> Boysenberry Spread  </td>
+                <td> $25.00</td>
+                <td>20</td>
+                <td> 25.00%</td>
+                <td>Condiments</td>
+                <td> Grandma Kelly's <br> Homestead</td>
+                <td> $375.00</td>
+            </tr>
+            <tr>
+                <td> <br></td>
+            </tr>
+            <tr>
+                <td style="color:rgb(68, 68, 181)"> Tofu  </td>
+                <td> $23.25</td>
+                <td>20</td>
+                <td> 25.00%</td>
+                <td>Produce</td>
+                <td> Mayumi's</td>
+                <td> $348.75</td>
+            </tr>
+            <tr>
+                <td> <br></td>
+            </tr>
+            <tr>
+                <td style="color:rgb(68, 68, 181)"> Teatime Chocolate <br> Biscuits  </td>
+                <td> $9.20</td>
+                <td>10</td>
+                <td> 25.00%</td>
+                <td>Confections</td>
+                <td> Speciality Biscuits, <br> Ltd.</td>
+                <td> $69.00</td>
+            </tr>
+           
+            <tr>
+                <td colspan="7">
+                    <hr style="border-top: dashed 1px;">
+
+                </td>
+            </tr>
+            
+            <tr>
+                <td align="center" colspan=6 style="color:grey"> Avg: $19.15 Sum:50 Avg:25.00% </td>
+                <td style="color:grey"> $792.75</td>
+
+            </tr>
+            </table>
+
+        </div>
+
+        <div>
+
+            <table width="1215">
+                <tr>
+                    <td>
+                    </td>
+                    <td align="right">
+                        <label for="subtotal" style="margin-inline-end: 110px"> <b> Subtotal:</b> </label> <span> $792.75</span>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name" style="margin-inline-start: 15px"> <b> Ship Name:</b></label>
+                        <input type="text" name="name" id="name">
+
+                    </td>
+                    <td align="right">
+                        <label for="fr" style="padding-right:105px"> <b> Freight:</b></label>
+                        <input type="text" size="3" name="fr" id="fr" placeholder="$38.28" style="padding-left:10px">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="via" style="margin-inline-start: 15px"> <b> Ship Via:</b></label>
+                        <select name="via" id="via">
+                            <option value="unitedpackage"selected> United Package </option>
+                            <option value="singlepackage"> Single Package</option>
+                            </select>
+
+                    </td>
+                    <td align="right" margin-right=50px>
+                        <label for="total" style="margin-inline-end: 135px"> <b> Total:</b> </label> <span> $831.03 </span>
+
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        
+        <hr style="border-top: solid gray 3px;width:98%">
+
+        <div class="required-field" style="margin-right: 10px;margin-left: 5px;margin-bottom: 10px;">
+            &emsp;
+            <i class="fa-solid fa-arrow-down" style="color: blue;"></i>
+            <i class="fa-solid fa-arrow-down" style="color: blue;"></i>
+            <label style="color:grey"> * -indicates a required field </label>
+            <div align="right" >
+                <input type="submit" value="OK" style="padding-left:30px;text-align:center;margin-inline-end:15px">
+                 <input type="reset" value="Delete" style="padding-left:30px;text-align:center;margin-inline-end: 15px">
+                <input type="button" value="Cancel" style="padding-left:30px;text-align:center;margin-inline-end: 18px">
+            </div>
+        </div>
+        <div>
+            <br>
+        </div>
+
+         </form>
+
+    </body>
+    
+</html>
