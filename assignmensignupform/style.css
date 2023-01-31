@@ -1,0 +1,31 @@
+body {
+    background-image: url("./im.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.form2 {
+    border: 2px solid rgb(139, 15, 15);
+    margin-top: 10px;
+    margin-right: 40px;
+    float: right;
+    padding: 30px;
+    padding-top: 10px;
+    font-size: xx-large;
+    height: 600px;
+    width: 40%;
+}
+
+
+#mainheader {
+    padding: 10px;
+    background-color: #1f3975;
+}
+
+
+img {
+    font-size: 10px;
+    width: 54%;
+    height: 740px;
+}  
