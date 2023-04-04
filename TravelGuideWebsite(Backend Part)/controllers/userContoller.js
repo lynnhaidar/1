@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const validator = require("validator");
 const sendMail = require("../utils/email").sendMail;
 const crypto = require("crypto");
-const {promisify} = require("util"); //takes any function that doesn't have async await or returns promise, and let it returns a promise
+const {promisify} = require("util");
 
 const jwt = require("jsonwebtoken")
 
@@ -11,7 +11,7 @@ const signToken = (id) =>{
     return jwt.sign({id},process.env.JWT_SECRET,{expiresIn:process.env.JWT_EXPIRES_IN}); //takes a secret and ID and the Expiry date together using algorithms (like RSA) to sign the token
 };
 
-// 2-Create a function that will send the token to the user
+//Creating a function that will send the token to the user
 const createSendToken = (user,statusCode,res,msg) => {
     const token = signToken(user._id);
 
@@ -171,7 +171,7 @@ exports.resetPassword = async(req,res) => {
 exports.protect = async (req,res,next) =>{
     try{
         //Checking if the token owner still exists
-        //authorization:Bearer: fjytgfkgyugkgkgkgkgkk (correct format)
+        //authorization:Bearer
         let token;
         
         if(req.headers.authorization && req.headers.authorization.startsWith("Bearer")){
@@ -182,7 +182,7 @@ exports.protect = async (req,res,next) =>{
             return res.status(401).json({message:"You aren't logged in. Please login to get access"});
 
         }
-        //2-Verify the token (by decoding the token)
+        //Verifying the token (by decoding the token)
         let decoded;
         try{
             decoded = await promisify(jwt.verify)(token,process.env.JWT_SECRET)
@@ -196,18 +196,18 @@ exports.protect = async (req,res,next) =>{
             }
         }
 
-        //3-Check if the token owner exist
+        //Checking if the token owner exist
         const currentUser = await User.findById(decoded.id);
         if(!currentUser){
             return res.status(401).json({message:"The user belonging to this session no longer exist"});
         }
 
-        //4-Check if the owner changed the password after the token was created
+        //Checking if the owner changed the password after the token was created
         if(currentUser.passwordChangedAfterTokenIssued(decoded.iat)){ //iat: time when token was issued //exp: time when the token will be expired           
             return res.status(401).json({message:"Your password has been changed! Please login again"});
         }
 
-        //5-If everything is ok: ADD the user to all the requests (req.user = currentUser)
+        //If everything is ok: ADD the user to all the requests (req.user = currentUser)
         req.user = currentUser;
         next();
 
